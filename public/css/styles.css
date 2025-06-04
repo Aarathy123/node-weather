@@ -1,0 +1,104 @@
+/* General styles for both About and Help pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.portrait{
+    width: 250px;
+}
+header {
+    color: #888888;
+    margin-bottom:48px ;
+}
+
+header h1 {
+    font-size: 64px;
+    margin-bottom:16px ;
+}
+header a {
+    
+    color: #888888;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #0078d7;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Specific styles for About page */
+.about-section {
+    background-color: #e7f3ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    font-size: 22px;
+}
+
+.about-section p {
+    font-size: 16px;
+}
+
+/* Specific styles for Help page */
+.help-section {
+    background-color: #fff4e5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.help-section h2 {
+    font-size: 22px;
+}
+
+.help-section p {
+    font-size: 16px;
+}
+
+footer {
+    padding: 16px 0;
+    margin-top: 16px;
+    border-top: 1px solid #eeeeee;
+    color: #888888;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+#message-1, #message-2 {
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #888888;
+    border: 1px solid #888888;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
