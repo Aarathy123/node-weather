@@ -1,20 +1,3 @@
-fetch('http://localhost:3000/weather?address=India', {
-    method: 'GET',
-}).then(response => {
-    return response.json();
-}).then(data => {
-   if (data.error) {
-        console.error('Error:', data.error);
-    }
-    else {
-        console.log('Weather Data:', data);
-        const { location, forecast, address } = data;
-        console.log(`Forecast: ${forecast}`);
-        console.log(`Address: ${address}`);
-    }
-}).catch(error => {
-    console.error('Error fetching the puzzle:', error);
-});
 
 document.querySelector('form').addEventListener('submit', (event) => {
     event.preventDefault(); // Prevent the form from submitting normally
