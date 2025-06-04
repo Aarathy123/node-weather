@@ -15,13 +15,14 @@ const getForecast = (latitude, longitude, callback) => {
       );
     } else {
       const data = body.current;
-      const { temperature, feelslike, weather_descriptions } = data;
+      console.log(data)
+      const { temperature, feelslike, weather_descriptions, wind_speed, observation_time } = data;
       console.log(`Current weather in ${body.location.name}:`);
       console.log(
         `It is currently ${temperature} degrees out. It feels like ${feelslike} degrees out.`
       );
       console.log(`Weather description: ${weather_descriptions[0]}`);
-      callback(undefined, `It is currently ${temperature} degrees out. It feels like ${feelslike} degrees out.`);
+      callback(undefined, `It is currently ${temperature} degrees out. It feels like ${feelslike} degrees out. Current wind-speed is ${wind_speed}. \n This value is marked at ${observation_time} today`);
     }
   });
 };
